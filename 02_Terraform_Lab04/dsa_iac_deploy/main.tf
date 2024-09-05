@@ -30,7 +30,19 @@ resource "aws_instance" "dsa_ml_api" {
 
   vpc_security_group_ids = [aws_security_group.dsa_ml_api_sg.id]
 
+
   # Script de inicialização
+
+  # instala o python e o aws-cli
+  # instala os pacotes do python
+  # cria uma pasta /dsa_ml_app na instância ec2
+  # executa uma cópia dos arquivos do s3 no ec2, na pasta criada
+  # entra na pasta criada
+    # gunicorn: framework web WSGI, usamos para fazer deploy em produção, pois o flask não é recomendado pois não é robusto para um alto volume de acessos
+  # gunicorn -w (para definir os workers) 4 (4 processos concorrentes) -b 0.0.0.0:5000 (inicializa a aplicação para atender em qlq endereço ip, 
+  # na porta 5000) app:app (define qual é a app usada - no nosso caso, chama app)
+  # nohup ____ &  é um comando para que a aplicação fique executando em background
+
   user_data = <<-EOF
                 #!/bin/bash
                 sudo yum update -y
