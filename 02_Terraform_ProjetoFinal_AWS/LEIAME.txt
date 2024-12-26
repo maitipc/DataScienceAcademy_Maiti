@@ -1,0 +1,53 @@
+========== PROJETO FINAL COM AMAZON AWS ========== 
+
+Implementação e deploy de um stack avançado de treinamento distribuído de Machine Learning usando PySpark no Amazon EMR.
+
+Objetivo:
+	Aproveitar o processamento distribuído para treinar modelos de machine learning em larga escala, otimizando tempo e recursos.
+
+PySpark: Interface Python para o Apache Spark, que faz o processamento distribuído.
+
+
+
+=== ESTRUTURA DO PROJETO ===
+
+/IAC
+	config -> arquivo de configuração
+	main -> arquivo principal
+	terraform.tfvars -> valores para as variáveis
+	variables -> declaração de variáveis
+
+	/dados -> dados usados para o aprendizado de máquina
+	/modules
+		/emr -> módulo de processamento
+		/iam -> módulo de segurança
+		/s3 -> módulo de armazenamento
+	/pipeline -> scripts python
+	/scripts
+		bootstrap -> para ajudar a preparar o ambiente de trabalho depois que provisionarmos o EMR.
+
+		O EMR é para montar o cluster spark. Quando tivermos o cluster, vamos customizar o ambiente com o script .sh para poder executar a pipeline de machine learning.
+
+
+
+
+=== INSTRUÇÕES DO PROJETO ===
+
+# Abra o terminal ou prompt de comando e navegue até a pasta onde você colocou os arquivos do projeto (não use espaço ou acento em nome de pasta)
+
+# Execute o comando abaixo para criar a imagem Docker
+
+docker build -t dsa-terraform-image:p2 .
+
+
+# Execute o comando abaixo para criar o container Docker
+
+docker run -dit --name dsa-p2 -v ./IaC:/iac dsa-terraform-image:p2 /bin/bash
+
+NOTA: No Windows você deve substituir ./IaC pelo caminho completo da pasta, por exemplo: C:\DSA\Cap14\IaC
+
+
+# Verifique as versões do Terraform e do AWS CLI com os comandos abaixo
+
+terraform version
+aws --version

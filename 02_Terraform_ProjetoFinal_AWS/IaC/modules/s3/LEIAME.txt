@@ -1,0 +1,8 @@
+main.tf
+variables.tb
+	|
+	|__ cria o bucket s3
+
+/s3objects -> arquivos para criar as pastar e arquivos dentro do bucket s3
+
+Lembrando que o nome do bucket precisa ser único na AWS. Uma boa prática é usar o próprio ID do usuário como parte do nome.
