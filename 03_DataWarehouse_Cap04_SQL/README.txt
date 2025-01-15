@@ -1,0 +1,9 @@
+Exemplos de Conceitos avançados de Banco de Dados:
+
+VIEWS
+MATERIALIZED VIEWS
+STORED PROCEDURES
+TRIGGERS
+FUNCTIONS
+EXPLAIN
+INDEX
