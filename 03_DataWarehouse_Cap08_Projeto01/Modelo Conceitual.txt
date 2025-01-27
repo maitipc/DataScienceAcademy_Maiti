@@ -1,0 +1,45 @@
+PROJETO 1 - MODELO CONCEITUAL
+
+Entidades e Atributos:
+
+
+Produto
+•ID
+•Nome
+•Categoria*
+
+Canal de Venda
+•Nome
+•Região
+
+Data
+•Dia
+•Mês
+•Ano
+•Data_Completa
+
+Cliente
+•ID
+•Nome
+•Tipo
+•Cidade
+•Estado
+•País
+
+Venda
+•Valor
+•Quantidade
+•Produto
+•Canal
+•Data
+•Cliente
+
+
+------------
+
+Relacionamentos:
+
+•Produto e  Venda:  Cada  venda  está  associada  a  um  produto. Um  produto  pode aparecer em várias vendas. Relacionamento Um Para Muitos.
+•Cliente e Venda: Cada venda está associada a um cliente. Um cliente pode estar associado a várias vendas. Relacionamento Um Para Muitos.
+•Canal  de  Venda e  Venda: Cada venda  está  associada  a  um  canal  de  venda. Um canal de venda pode estar associado a várias vendas. Relacionamento Um Para Muitos.
+•Data  e  Venda:  Cada  ponto  no  tempo  pode  registrar  várias  vendas.  Cada  venda está associada a um ponto no tempo. Relacionamento Um Para Muitos.
