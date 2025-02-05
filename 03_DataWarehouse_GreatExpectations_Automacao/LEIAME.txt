@@ -1,0 +1,1 @@
+Automação da Validação de Expectativas com Great Expectations e Python.
