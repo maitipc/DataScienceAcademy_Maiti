@@ -1,0 +1,6 @@
+Neste lab, ao setarmos o airbyte para sincronizar os dados de forma incremental, o que estamos fazendo no script Lab3 é configurar um trigger que monitora a data (coluna updated_at). E quando houver mudança nessa data, ele executa uma função, que vai fazer o update na tabela Destino, apenas dos registros em que houveram modificação na coluna updated_at.
+
+-> INCREMENTAL APPEND: Duplica o registro que foi alterado e mantém os 2. Interessante para fins de auditoria, por exemplo.
+-> INCREMENTAL DEDUPPED: Usa a chave primária para não duplicar os registros.
+
+ATENÇÃO: esse modo de sincronização não suporta operações DELETE. Para refletir essa operação, o ideal seria usar CDC.
