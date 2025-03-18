@@ -1,0 +1,15 @@
+O DBT (Data Build Tool) é uma poderosa ferramenta de transformação de dados, que permite escrever essas transformações em SQL, usando práticas de engenharia de software, como controle de versão, testes automatizados, etc.
+
+O que envolve essas transformações:
+
+1) DEFINIÇÃO DE MODELOS: Os modelos são arquivos SQL que executam a lógica da transformação de dados, que ficam dentro da pasta models.
+
+2) UTILIZAÇÃO DE MACROS: São blocos de código reutilizáveis, escritos usando a linguagem Jinja, que permitem criar consultas SQL dinâmicas e funções personalizadas.
+Módulos (podem conter funções ou trechos de código SQL que serão reutilizados) e Funções (usadas para manipular dados ou gerar SQL com base em parâmetros) são tipos de macros.
+
+3) CONFIGURAÇÃO DE DEPENDÊNCIAS: Usar a função ref() para conectar um modelo a outros modelos ou tabelas, garantindo a ordem correta de execução das transformações.
+
+4) GERAR DOCUMENTAÇÃO: Adicionar descrições e metadados nos modelos e colunas
+
+5) TESTES: Incorporar testes no DBT para garantir a qualidade e integridade dos dados transformados.
+
