@@ -1,0 +1,14 @@
+Dentro da pasta /tests estão as queries que validam os testes que faremos. Exemplo:
+
+-- Testa se há algum valor maior ou igual a 450 (não permitido de acordo com nossas regras de negócio, por exemplo)
+SELECT *
+FROM {{ ref('pedidos') }}
+WHERE quantidade < 450
+
+Nesse caso o teste vai falhar caso haja algum valor >= 450.
+
+Dentro da pasta /models, junto com os modelos, temos também o schema.yml. Nele estão definidos todos os testes do DBT, sejam eles nativos ou customizados.
+
+Dentro da pasta /macros, nós criamos uma CTE que armazena os valores que não podem passar no teste de faixa. Essa query, feita de forma genérica, automatiza o processo de validação de valores dentro de um range. Além disso, o teste tem um SELECT que informa quantas linhas atendem ou não ao intervalo.
+O accepted_range não é algo exclusivo das macros. Ele poderia ser utilizado num teste da pasta models. Mas colocamos na pasta macros pois a ideia das macros é reutilizar código, e nesse caso é um código genérico que pode ser reutilizado por qualquer model.
+Para usar o accepted_range, ele deve ser definido no schema.yml
