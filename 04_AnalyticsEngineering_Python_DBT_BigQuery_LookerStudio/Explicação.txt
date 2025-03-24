@@ -1,0 +1,12 @@
+:: EXPLICAÇÃO DA PIPELINE DO PROJETO ::
+
+Neste projeto, uniremos engenharia de dados e análise de dados.
+
+Teremos a máquina cliente com o Docker, onde vamos criar o projeto, colocar os arquivos necessários e fazer a execução.
+
+Dentro da pasta dsa, vamos criar a pasta do projeto DBT. A pasta chave é onde fica a chave de autenticação do ambiente em nuvem Big Query. Nós vamos executar o DBT localmente, mas todos os modelos serão criados no Big Query.
+
+Dentro da pasta dados estão os arquivos de staging, a fonte de dados. O script python dsa_carrega_dados_bigquery será o responsável por carregar os dados na nuvem.
+
+Com os dados na nuvem, vamos criar o projeto no DBT para criar os modelos. O modelo de staging vai coletar os dados da área intermediária e levar para a área final, que será um datawarehouse.
+Depois de criados os modelos de staging, criamos os marts, que são essencialmente as views do SQL, que vão permitir construir os relatórios depois usando o Looker Studio.

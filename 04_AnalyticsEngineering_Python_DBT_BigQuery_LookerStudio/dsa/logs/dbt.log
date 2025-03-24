@@ -1,0 +1,37 @@
+[0m11:11:19.423987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6abdf96e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6abdfd9ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6abe3341d0>]}
+
+
+============================== 11:11:19.430737 | 11eefce4-6cbd-4a44-8609-43c9c731b1f4 ==============================
+[0m11:11:19.430737 [info ] [MainThread]: Running with dbt=1.8.8
+[0m11:11:19.431960 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/root/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init lab9', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:11:19.447419 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/root/.dbt')}
+[0m11:11:19.448735 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:11:19.451685 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.11/site-packages/dbt/include/starter_project
+[0m11:11:19.573381 [info ] [MainThread]: 
+Your new dbt project "lab9" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:11:19.574422 [info ] [MainThread]: Setting up your profile.
+[0m11:12:51.161087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30233a9b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30236ffb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3023366dd0>]}
+
+
+============================== 11:12:51.164970 | df5cd2f2-0b43-4226-b459-db955186d095 ==============================
+[0m11:12:51.164970 [info ] [MainThread]: Running with dbt=1.8.8
+[0m11:12:51.166291 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init lab9', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:12:51.180247 [info ] [MainThread]: A project called lab9 already exists here.
+[0m11:12:51.182125 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 0.0656641, "process_user_time": 1.015239, "process_kernel_time": 0.109486, "process_mem_max_rss": "89388", "process_in_blocks": "53024", "process_out_blocks": "0"}
+[0m11:12:51.182978 [debug] [MainThread]: Command `dbt init` succeeded at 11:12:51.182880 after 0.07 seconds
+[0m11:12:51.183591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3024850f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f302336cd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f30236ffd90>]}
+[0m11:12:51.184262 [debug] [MainThread]: Flushing usage events
