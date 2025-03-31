@@ -1,0 +1,21 @@
+A integração entre Airbyte, DBT e SQL é extremamente poderosa para criar pipelines de dados eficientes e automatizadas.
+
+Airbyte  é  usado  para  extrair  dados  de  várias fontes (como APIs, bancos de dados ou arquivos);
+DBT realiza as transformações no modelo de dados para atender às necessidades de negócio;
+SQL é usado dentro do DBT para definir essas transformações.
+
+Empresas que desejam consolidar dados em um Data Warehouse  (como  Snowflake,  BigQuery  ou  Redshift)  podem  usar  o  Airbyte  para  carregar  os dados  brutos,  DBT  para  transformá-los  em  modelos  analíticos  e  SQL  para  realizar  consultas  e análises no warehouse.
+
+Empresas  com  múltiplas  fontes  de  dados,  como plataformas  de  e-commerce,  CRMs  e  ERPs,  podem  usar  Airbyte  para  unificar  os  dados  em  um banco  central.  DBT  padroniza  e  transforma  os  dados  em  modelos  prontos  para  análise,  e  SQL permite extrações específicas ou criação de dashboards.
+
+------------------------------
+
+:: ARQUITETURA DA SOLUÇÃO ::
+
+A empresa tem um banco de dados transacional local, onde as atividades do dia a dia são feitas. Esses dados não estão prontos para análise.
+O banco de dados local da empresa faremos usando PostgreSQL, numa máquina local Docker.
+
+Então, vamos extrair e transportar os dados desse banco transacional (usando o Airbyte) para uma área de STAGING, onde faremos a limpeza e transformação dos dados, usando os modelos em SQL do DBT. Essa área intermediária ficará no Snowflake.
+
+E finalmente, também no Snowflake, ficará o Data Warehouse, com os dados consolidados para análise.
+

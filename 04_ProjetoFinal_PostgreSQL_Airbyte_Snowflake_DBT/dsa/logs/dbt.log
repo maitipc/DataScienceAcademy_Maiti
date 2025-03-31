@@ -1,0 +1,32 @@
+[0m09:54:06.808934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f82358ddb10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8235aca690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8235d90ad0>]}
+
+
+============================== 09:54:06.814798 | e0489227-db94-4e2a-b9da-fa6558e8327f ==============================
+[0m09:54:06.814798 [info ] [MainThread]: Running with dbt=1.9.1
+[0m09:54:06.816081 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/root/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init projetodsa', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:54:06.825917 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/root/.dbt')}
+[0m09:54:06.827648 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m09:54:06.830569 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.11/site-packages/dbt/include/starter_project
+[0m09:54:06.951017 [info ] [MainThread]: 
+Your new dbt project "projetodsa" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:54:06.952044 [info ] [MainThread]: Setting up your profile.
+[0m09:58:22.093338 [info ] [MainThread]: Profile projetodsa written to /root/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:58:22.099316 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 255.35304, "process_in_blocks": "2520", "process_kernel_time": 0.721985, "process_mem_max_rss": "111696", "process_out_blocks": "1744", "process_user_time": 1.513202}
+[0m09:58:22.100559 [debug] [MainThread]: Command `dbt init` succeeded at 09:58:22.100383 after 255.35 seconds
+[0m09:58:22.101465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8235890e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8239525210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f82395247d0>]}
+[0m09:58:22.102269 [debug] [MainThread]: Flushing usage events
+[0m09:58:22.878723 [debug] [MainThread]: An error was encountered while trying to flush usage events
