@@ -1,0 +1,25 @@
+DATA LAKEHOUSE é a IDEIA/CONCEITO.
+
+DELTA LAKEHOUSE é uma FORMA DE IMPLEMENTAR esse conceito usando Delta Lake.
+
+
+-> Data Lakehouse é uma arquitetura híbrida que combina características de data lakes (armazenamento barato e escalável de dados brutos) e data warehouses (consultas analíticas estruturadas e otimizadas). O objetivo é permitir análises rápidas e confiáveis em grandes volumes de dados, sem precisar duplicar os dados entre sistemas diferentes.
+
+Tecnologias que implementam o conceito de Lakehouse: Databricks Lakehouse Platform, Snowflake, Apache Iceberg, etc...
+
+-> Delta Lakehouse é uma implementação concreta de um Data Lakehouse baseada no Delta Lake, um formato de armazenamento open-source, criado pela Databricks. Ele traz controle de versão (ACID transactions), esquema evolutivo e outras vantagens a arquivos em formatos como Parquet armazenados em um data lake (como S3, ADLS, etc).
+Logo, podemos dizer que Delta Lake é a base técnica, e Delta Lakehouse se refere ao uso do Delta Lake para construir um Lakehouse.
+
+
+
+----------------------
+
+::: INSTRUÇÕES :::
+
+# Lab 6 - Operações CRUD e Time Travel com Delta Lake
+
+# Abra o terminal ou prompt de comando, navegue até a pasta onde estão os arquivos e execute:
+
+docker-compose up -d
+
+# Acesse o Jupyter Notebook pelo navegador e acompanhe as instruções das aulas.
