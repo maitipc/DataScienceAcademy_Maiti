@@ -9,3 +9,15 @@ Qualidade das tabelas:
 - BRONZE: dados brutos (raw data)
 - PRATA: dados da bronze limpos
 - OURO: dados refinados (por exemplo, uma table de estatísticas dos clientes com base nos comportamentos de compra deles, etc.)
+
+-------------
+
+ESTRUTURA DO PROJETO:
+
+/dados -> arquivos .csv com os dados que vamos usar, onde os arquivos clientes_batch_01 e 02 serão consolidados numa única tabela, e tipos clientes será uma segunda tabela. Isso será feito com pyspark.
+Posteriormente haverá uma segunda consolidação de tabelas no Delta Live Tables.
+
+/notebooks -> arquivo 01 - vai realizar a primeira consolidação.
+02 - vai realizar a segunda consolidação e criar as delta live tables.
+
+Todo esse projeto é feito 100% em ambiente Databricks.
