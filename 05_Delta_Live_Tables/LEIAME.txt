@@ -1,0 +1,11 @@
+DELTA LIVE TABLES é uma ferramenta da Databricks que permite criar pipelines de dados.
+
+Usa SQL para construir pipelines unindo dados de diferentes tipos em batch e streaming.
+
+Sintaxe principal:
+CREATE OR REFRESH STREAMING TABLE ...
+
+Qualidade das tabelas:
+- BRONZE: dados brutos (raw data)
+- PRATA: dados da bronze limpos
+- OURO: dados refinados (por exemplo, uma table de estatísticas dos clientes com base nos comportamentos de compra deles, etc.)
