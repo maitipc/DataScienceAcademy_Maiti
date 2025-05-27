@@ -1,0 +1,8 @@
+:::: Projeto Final: Consolidação, Limpeza e Enriquecimento de Dados de Diferentes Formatos no Data Lakehouse ::::
+
+No projeto final do curso, vamos construir e automatizar um pipeline de processamento de   dados,   desde   os   dados   brutos   em   diferentes   formatos,   passando   pela   limpeza   e enriquecimento, até a criação da tabela com os dados prontos para análise. 
+
+Criaremos as tabelas Bronze,  Silver e Gold em formato delta e ao final vamos automatizar a execução do job com a orquestração na plataforma Databricks.
+
+Os dados utilizados são fictícios e foram criados com o pacote Faker em Python. 
+Detalhes sobre o pacote podem ser obtidos aqui: https://pypi.org/project/Faker
