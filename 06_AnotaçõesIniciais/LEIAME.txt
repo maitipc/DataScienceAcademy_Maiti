@@ -1,0 +1,20 @@
+::: APACHE KAFKA E PYSPARK :::
+
+
+O processamento distribuído é uma abordagem computacional em que várias máquinas, frequentemente referidas como nós, trabalham juntas para resolver uma tarefa comum.
+
+No contexto da engenharia de dados, o processamento distribuído é uma abordagem que permite  processar,  armazenar  e  analisar  grandes  volumes  de  dados  de  maneira  eficiente  e escalável. 
+Os dados são divididos em partes menores, chamadas de partições ou fragmentos. Cada partição é designada para ser processada em um nó específico de um cluster de máquinas.
+
+Se um nó falhar durante o processamento, o sistema é projetado para detectar essa falha e redistribuir automaticamente a tarefa para outro nó. 
+Isso é possível através da replicação de dados em vários nós, garantindo que não haja ponto único de falha.
+
+Após o processamento, os resultados de todos os nós são consolidados e agregados para produzir o resultado final.
+
+Há várias ferramentas e frameworks, como Apache Hadoop e Apache Spark, projetados especificamente  para  facilitar  o  processamento  distribuído.  
+Por  exemplo,  o  PySpark  permite processamento distribuído usando a linguagem Python, enquanto o Apache Kafka é usado para streaming de dados em tempo real em sistemas distribuídos.
+Sistemas como o Hadoop Distributed FileSystem (HDFS) são usados para armazenar dados de forma distribuída, garantindo que os dados estejam próximos ao local  de processamento e oferecendo redundância para tolerância a falhas.
+
+No âmbito da engenharia de dados, o processamento distribuído é fundamental para lidar com os desafios apresentados pelo Big Data, permitindo que as organizações obtenham insights rápidos e precisos a partir de vastos conjuntos de dados.
+
+Este  curso  é  sobre  PySpark  e  Apache  Kafka  em  ambiente  distribuído,  o  qual  você  vai aprender como criar e configurar na prática no seu próprio computador.

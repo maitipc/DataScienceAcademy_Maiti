@@ -1,0 +1,16 @@
+::: BIBLIOTECA E FRAMEWORKS EM PYTHON :::
+
+▪Pandas: para manipulação e análise de dados. 
+Ele fornece estruturas de dados flexíveis que facilitam o trabalho com dados tabulares.
+
+▪NumPy: para operações matemáticas e manipulação de arrays.
+
+▪Scikit-learn: para modelagem e aprendizado de máquina.
+
+▪TensorFlow e PyTorch: para aprendizado profundo.
+
+▪SQLAlchemy: para interação com bancos de dados relacionais.
+
+▪Apache  Spark  (PySpark):  para  processamento  distribuído  de  grandes  conjuntos  de dados.
+
+▪Apache Airflow: para orquestração de pipelines de dados
