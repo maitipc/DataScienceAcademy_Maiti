@@ -10,3 +10,21 @@ http://localhost:9091
 
 # History Server
 http://localhost:18081
+
+
+------------------
+
+== Pipeline PySpark para Extrair, Transformar e Carregar Arquivos JSON em Banco de Dados ==
+
+Extração, Limpeza e Transformação de dados: PySpark
+Banco de dados: SQLite
+
+Se conecta com SQLlite via JDBC
+
+Pasta /dados:
+.json -> dados de origem
+.db -> dados de destino
+.jar -> conexão jdbc
+
+Pasta /jobs:
+.py -> script da pipeline
