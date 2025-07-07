@@ -1,0 +1,37 @@
+==== SUPER PROJETO DE PYSPARK PARA PROCESSAMENTO DISTRIBUÍDO DE DADOS ====
+
+Na pasta de Jobs desse projeto, tem 51 scripts diferentes, super ricos em informação de pyspark.
+Inclui manipulação de dados, criação de pipelines, etc...
+
+Extremamente útil para consultas e para usar como base para outros scripts.
+
+===================================================================
+
+# Preparação do Ambiente de Trabalho com Python e PySpark
+# Configuração do Cluster PySpark
+
+# Criar e Inicializar o Cluster
+docker-compose -f docker-compose.yml up -d --scale spark-worker=2
+
+# Spark Master
+http://localhost:9091
+
+# History Server
+http://localhost:18081
+
+------------------
+
+#Estrutura do Projeto:
+
+Extração, Limpeza e Transformação de dados: PySpark
+Banco de dados: SQLite
+
+Se conecta com SQLlite via JDBC
+
+Pasta /dados:
+.json -> dados de origem
+.db -> dados de destino
+.jar -> conexão jdbc
+
+Pasta /jobs:
+.py -> script da pipeline

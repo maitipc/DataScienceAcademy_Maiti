@@ -1,0 +1,116 @@
+# Execução dos scripts do Capítulo 5:
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-00-teste-log.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-01-distinct.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-02-add-new-column.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-03-add-month.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-04-expr.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-05-arraytype.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-06-array-string.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-07-create-dataframe-dictionary.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-08-show-top-n-rows.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-09-sampling.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-10-row.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-11-aggregate-stats.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-12-convert-map-to-columns.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-13-convert_columns-to-map.py
+
+
+
+
+
+# Execução dos scripts do Capítulo 6:
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-14-filter.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-15-filter2.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-16-filter-null.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-17-drop-column.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-18-drop-null.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-19-explode-array-map.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-20-explode-nested-array.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-21-loop.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-22-pivot.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-23-split-function.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-24-collect.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-25-operadores.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-26-withcolumn.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-27-column-operations.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-28-maptype-dataframe-column.py
+
+
+
+
+
+# Execução dos scripts do Capítulo 7:
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-29-rdd.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-30-rdd-actions.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-31-rdd-broadcast.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-32-rdd-map.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-33-rdd-flatMap.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-34-rdd-to-dataframe.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-35-rdd-reduceByKey.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-36-rdd-map-reduce.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-37-rdd-map-reduce2.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-38-partitionby.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-39-mappartitions.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-40-repartition1.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-41-repartition2.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-42-range-partition1.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-43-range-partition2.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-44-dataframe-repartition.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-45-udf.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-46-parallelize.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-47-time-diff.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-48-timestamp.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-49-current-date-timestamp.py
+
+docker exec dsa-pyspark-master spark-submit --deploy-mode client ./apps/dsa-p2-50-window-functions.py
+
