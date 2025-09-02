@@ -1,0 +1,3 @@
+Neste projeto, vamos construir um Kafka producer para produzir dados em tempo real e enviar para um tópico. 
+
+Vamos simular dados extraídos do acesso a um web site em tempo real. Então, criaremos um Kafka consumer com o Spark Streaming para consumir e processar os dados em tempo real e armazenar os dados processados no HDFS em formato Parquet.
