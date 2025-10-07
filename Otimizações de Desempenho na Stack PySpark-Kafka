@@ -1,0 +1,37 @@
+# ⚙️ Otimizações de Desempenho na Stack PySpark-Kafka
+
+Otimizar o desempenho em uma stack que utiliza **PySpark** e **Kafka** envolve práticas específicas para garantir eficiência no processamento e na transmissão de dados.  
+Abaixo estão alguns pontos-chave divididos por componentes da stack.
+
+---
+
+## 🧩 Kafka
+
+### 🔹 Ajuste do tamanho dos batches
+Configure o parâmetro `batch.size` para um valor apropriado ao seu volume de dados e recursos disponíveis.  
+Isso ajuda a equilibrar **latência** e **throughput**.
+
+### 🔹 Particionamento eficiente
+Garanta que os **tópicos** sejam particionados adequadamente para distribuir a carga entre os consumidores.
+
+### 🔹 Retenção de mensagens
+Configure a retenção (`retention.ms` ou `retention.bytes`) de acordo com as necessidades do pipeline, evitando **sobrecarga desnecessária** no cluster.
+
+### 🔹 Ajuste do `fetch.max.bytes`
+Modifique este parâmetro para evitar sobrecarregar o consumidor, especialmente em **pipelines de alta latência**.
+
+---
+
+## 🔥 PySpark
+
+### 🔹 Persistência adequada
+Utilize os métodos `cache()` ou `persist()` para armazenar dados intermediários **somente quando necessário**, evitando manter RDDs/Datasets desnecessariamente.
+
+### 🔹 Gerenciamento de particionamento
+Ajuste o número de partições em RDDs ou DataFrames para evitar **subutilização de recursos** ou **sobrecarga**.  
+Isso pode ser feito com:
+
+```python
+df = df.repartition(num_particoes)
+# ou
+df = df.coalesce(num_particoes)
