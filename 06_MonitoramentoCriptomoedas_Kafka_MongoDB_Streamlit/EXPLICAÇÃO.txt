@@ -1,0 +1,17 @@
+Neste   projeto   vamos   criar   um   sistema   integrado   para   monitorar   o   mercado   de criptomoedas  em  tempo  real. 
+
+Usaremos  o  Apache  Kafka  para  receber  dados  de  cotações  de criptomoedas através de API. De forma assíncrona vamos consumir os dados do Kafka, filtrar e armazenar no MongoDB, para então na sequência analisar e monitorar os dados em tempo real através de uma web app criada com Streamlit.
+
+Além de praticar o uso do Apache Kafka para resolver problemas do mundo real, o projeto ainda pode ser usado por quem investe no mercado de criptomoedas.
+
+IMPORTANTE: Neste projeto não usaremos o PySpark, visto que não é necessário porque não vamos extrair grande volume de dados e não tem nenhum processamento pesado. Poderíamos utilizar o PySpark, mas seria como "usar um canhão para matar um mosquito".
+
+------------
+
+ O site utilizado para monitorar as criptmoedas é o coincap.io, que oferece uma API gratuita para extrair dados de cotaçoes de criptomoedas.
+
+ Ao extrair os dados da API (usando python), armazenamos de forma temporária com o apache kafka para fazer o processamento posteriormente. Então, usando python novamente, conectamos no kafka, acessamos o tópico, pegamos os dados e gravamos no banco de dados MongoDB.
+
+ Escolhemos o MongoDB pois precisamos fazer pouco processamento dos dados antes de armazená-los. Apenas aplicamos uma filtragem dos dados antes de armazená-los, e dessa forma, não perdemos a janela do kafka.
+
+ Uma vez que os dados estão armazenados em disco, construímos uma app web para acessar o MongoDB e visualizar os dados através de gráficos e tabela, usando o Streamlit para fazer isso.
