@@ -1,0 +1,13 @@
+Simulação de Erros e Recuperação de Falhas em Multi-Node Kafka Cluster Para Gestão de Vendas em Tempo Real
+
+Vamos  concluir  o  curso  em  grande  estilo  construindo  um Multi-Node  Kafka  Cluster  e provocando problemas e erros no cluster para estudar a recuperação a falhas em tempo real.
+
+Este projeto está dividido em duas partes:
+
+Na primeira parte vamos construir um Multi-Node Kafka Cluster para gestão de vendas em  tempo  real,  incluindo  ferramenta  de  monitoramento  do  cluster  também  em  tempo  real. 
+Nosso cluster vai extrair dados de vendas em tempo real com o Kafka, processar os dados com PySpark para agrupar o total de vendas por janela de processamento e armazenar o resultado do processamento em banco de dados. Dessa forma a empresa pode acompanhar o acumulado de vendas ao longo do tempo no mesmo instante que as vendas estão ocorrendo.
+
+Com o cluster funcionando perfeitamente, vamos então trabalhar na segunda parte do projeto e provocar problemas  e  erros  no  cluster a  fim  de estudar  a  recuperação  a  falhas  em tempo real. 
+Todo o sistema precisa ser tolerante a falhas e veremos isso na prática.
+
+Este projeto é praticamente uma consultoria completa. Aproveite!
