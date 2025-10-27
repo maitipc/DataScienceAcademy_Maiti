@@ -1,0 +1,19 @@
+LEFT JOIN → mantém tudo da tabela da esquerda, mesmo sem correspondência.
+ 🧠 Bom para não perder registros do lado principal.
+
+RIGHT JOIN → mantém tudo da tabela da direita, mesmo sem match.
+ 📊 Útil quando o lado direito é o foco da análise.
+
+INNER JOIN → mostra apenas os dados que coincidem nas duas tabelas.
+ 🎯 Ideal para comparações precisas.
+
+FULL JOIN → traz tudo de ambos os lados, com e sem correspondência.
+ 🌐 Perfeito para visões completas.
+
+ ---------------
+
+
+💡 Benefícios gerais:
+Conecta dados sem duplicar.
+Dá clareza e flexibilidade às análises.
+Essencial em relatórios e integrações.
